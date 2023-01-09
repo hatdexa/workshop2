@@ -21,6 +21,7 @@ services:
   nginx:
     build: ./nginx
     image: 736574314952.dkr.ecr.us-east-1.amazonaws.com/workshop2:workshop2_nginx
+    command:
     volumes:
       - static_volume:/usr/src/app/static
     ports:
